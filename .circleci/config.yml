@@ -1,0 +1,9 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: ghcr.io/risti699/docker-dockeran:main
+    steps:
+      - run: git config --global user.name "nadinsylaa"
+      - run: git config --global user.email "asepmlnaaa@gmail.com"
+      - run: git clone --depth 1 "https://github.com/Styrofoam-Kernel/kernel_xiaomi_mojito" --branch "$CIRCLE_BRANCH" .
