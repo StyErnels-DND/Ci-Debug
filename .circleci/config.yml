@@ -6,4 +6,4 @@ jobs:
     steps:
       - run: git config --global user.name "nadinsylaa"
       - run: git config --global user.email "asepmlnaaa@gmail.com"
-      - run: git clone --depth 1 "https://github.com/Styrofoam-Kernel/kernel_xiaomi_mojito" --branch "$CIRCLE_BRANCH" .
+      - run: git clone --depth 1 "https://github.com/Styrofoam-Kernel/kernel_xiaomi_mojito" .
